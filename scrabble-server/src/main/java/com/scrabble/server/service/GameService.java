@@ -267,7 +267,8 @@ public class GameService {
             return;
         }
         
-        System.out.println("DEBUG: Processing bot move for " + bot.getName());
+        System.out.println("DEBUG: Processing bot move for " + bot.getName() + 
+                          " (ID: " + bot.getId() + ") - Rack size: " + bot.getRackSize());
         
         try {
             // Simple bot AI: Try to place a word, otherwise pass
@@ -295,7 +296,7 @@ public class GameService {
                     System.out.println("DEBUG: Bot move is invalid: " + result.getErrorMessage());
                     // If bot move is invalid, make the bot pass
                     Move passMove = Move.createPass(bot.getId());
-                    applyMove(game, passMove, GameRules.MoveValidationResult.valid(0, new ArrayList<>()));
+                    applyMove(game, passMove, GameRules.MoveValidationResult.valid(0, Collections.emptyList()));
                     game.switchTurns();
                 }
                 
@@ -307,7 +308,7 @@ public class GameService {
                 System.out.println("DEBUG: Bot could not generate a move, passing");
                 // Bot passes
                 Move passMove = Move.createPass(bot.getId());
-                applyMove(game, passMove, GameRules.MoveValidationResult.valid(0, new ArrayList<>()));
+                applyMove(game, passMove, GameRules.MoveValidationResult.valid(0, Collections.emptyList()));
                 game.switchTurns();
                 
                 // Notify WebSocket clients about the bot pass
@@ -316,13 +317,13 @@ public class GameService {
                 }
             }
         } catch (Exception e) {
-            System.err.println("ERROR: Exception during bot move processing: " + e.getMessage());
+            System.err.println("ERROR: Exception during bot move processing: " + e.getClass().getSimpleName() + ": " + e.getMessage());
             e.printStackTrace();
             
             // Fallback: make bot pass
             try {
                 Move passMove = Move.createPass(bot.getId());
-                applyMove(game, passMove, GameRules.MoveValidationResult.valid(0, new ArrayList<>()));
+                applyMove(game, passMove, GameRules.MoveValidationResult.valid(0, Collections.emptyList()));
                 game.switchTurns();
                 
                 // Notify WebSocket clients about the bot fallback pass
@@ -330,7 +331,8 @@ public class GameService {
                     webSocketHandler.notifyBotMove(game.getGameId());
                 }
             } catch (Exception fallbackError) {
-                System.err.println("ERROR: Even bot pass failed: " + fallbackError.getMessage());
+                System.err.println("ERROR: Even bot pass failed: " + fallbackError.getClass().getSimpleName() + ": " + fallbackError.getMessage());
+                fallbackError.printStackTrace();
             }
         }
     }
@@ -347,7 +349,11 @@ public class GameService {
         
         // For the first move, try to place a tile in the center
         if (game.isFirstMove()) {
-            Tile firstTile = bot.getRack().get(0);
+            List<Tile> rack = bot.getRack();
+            if (rack == null || rack.isEmpty()) {
+                return null; // No tiles available
+            }
+            Tile firstTile = rack.get(0);
             Map<Position, Tile> placements = new HashMap<>();
             placements.put(new Position(7, 7), firstTile); // Center position
             return Move.createTilePlacement(bot.getId(), placements);

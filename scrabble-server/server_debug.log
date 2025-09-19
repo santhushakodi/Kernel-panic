@@ -19,14 +19,13 @@
 [INFO] Copying 2 resources from src/main/resources to target/classes
 [INFO] 
 [INFO] --- compiler:3.11.0:compile (default-compile) @ scrabble-server ---
-[INFO] Changes detected - recompiling the module! :source
-[INFO] Compiling 6 source files with javac [debug target 21] to target/classes
+[INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- resources:3.3.1:testResources (default-testResources) @ scrabble-server ---
 [INFO] skip non existing resourceDirectory /home/Kasun/Development/RnD/Challange/scrabble-server/src/test/resources
 [INFO] 
 [INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ scrabble-server ---
-[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] <<< spring-boot:4.0.0-M3:run (default-cli) < test-compile @ scrabble-server <<<
 [INFO] 
@@ -42,22 +41,127 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.1)
 
-2025-09-19T17:23:58.279+05:30  INFO 230900 --- [Scrabble Server] [           main] c.s.server.ScrabbleServerApplication     : Starting ScrabbleServerApplication using Java 21.0.7 with PID 230900 (/home/Kasun/Development/RnD/Challange/scrabble-server/target/classes started by Kasun in /home/Kasun/Development/RnD/Challange/scrabble-server)
-2025-09-19T17:23:58.280+05:30  INFO 230900 --- [Scrabble Server] [           main] c.s.server.ScrabbleServerApplication     : The following 1 profile is active: "devlocal"
-2025-09-19T17:23:58.753+05:30  INFO 230900 --- [Scrabble Server] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-09-19T17:23:58.761+05:30  INFO 230900 --- [Scrabble Server] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-09-19T17:23:58.761+05:30  INFO 230900 --- [Scrabble Server] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
-2025-09-19T17:23:58.784+05:30  INFO 230900 --- [Scrabble Server] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-09-19T17:23:58.785+05:30  INFO 230900 --- [Scrabble Server] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 478 ms
+2025-09-19T17:31:57.801+05:30  INFO 240394 --- [Scrabble Server] [           main] c.s.server.ScrabbleServerApplication     : Starting ScrabbleServerApplication using Java 21.0.7 with PID 240394 (/home/Kasun/Development/RnD/Challange/scrabble-server/target/classes started by Kasun in /home/Kasun/Development/RnD/Challange/scrabble-server)
+2025-09-19T17:31:57.802+05:30  INFO 240394 --- [Scrabble Server] [           main] c.s.server.ScrabbleServerApplication     : The following 1 profile is active: "devlocal"
+2025-09-19T17:31:58.279+05:30  INFO 240394 --- [Scrabble Server] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-09-19T17:31:58.287+05:30  INFO 240394 --- [Scrabble Server] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-19T17:31:58.288+05:30  INFO 240394 --- [Scrabble Server] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2025-09-19T17:31:58.314+05:30  INFO 240394 --- [Scrabble Server] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-19T17:31:58.315+05:30  INFO 240394 --- [Scrabble Server] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 491 ms
 Loading dictionary from: ../CSW24.txt
 Dictionary loaded: 280887 words
-2025-09-19T17:23:59.436+05:30 DEBUG 230900 --- [Scrabble Server] [           main] o.s.w.s.s.s.WebSocketHandlerMapping      : Patterns [/game, /game-sockjs/**] in 'webSocketHandlerMapping'
-2025-09-19T17:23:59.568+05:30  INFO 230900 --- [Scrabble Server] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
-2025-09-19T17:23:59.572+05:30  INFO 230900 --- [Scrabble Server] [           main] c.s.server.ScrabbleServerApplication     : Started ScrabbleServerApplication in 1.471 seconds (process running for 1.636)
-2025-09-19T17:24:07.245+05:30  INFO 230900 --- [Scrabble Server] [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-09-19T17:24:07.245+05:30  INFO 230900 --- [Scrabble Server] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-09-19T17:24:07.245+05:30  INFO 230900 --- [Scrabble Server] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2025-09-19T17:24:07.250+05:30 DEBUG 230900 --- [Scrabble Server] [nio-8081-exec-1] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@3724b43e
-2025-09-19T17:24:07.255+05:30 DEBUG 230900 --- [Scrabble Server] [nio-8081-exec-1] o.s.w.s.s.s.WebSocketHttpRequestHandler  : GET /game
-2025-09-19T17:24:07.271+05:30 DEBUG 230900 --- [Scrabble Server] [nio-8081-exec-1] s.w.s.h.LoggingWebSocketHandlerDecorator : New StandardWebSocketSession[id=c6a39b99-c316-9d61-6e1d-40a6383e557f, uri=ws://localhost:8081/game]
-WebSocket connection established: c6a39b99-c316-9d61-6e1d-40a6383e557f
+2025-09-19T17:31:59.139+05:30 DEBUG 240394 --- [Scrabble Server] [           main] o.s.w.s.s.s.WebSocketHandlerMapping      : Patterns [/game, /game-sockjs/**] in 'webSocketHandlerMapping'
+2025-09-19T17:31:59.344+05:30  INFO 240394 --- [Scrabble Server] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2025-09-19T17:31:59.349+05:30  INFO 240394 --- [Scrabble Server] [           main] c.s.server.ScrabbleServerApplication     : Started ScrabbleServerApplication in 1.744 seconds (process running for 1.901)
+2025-09-19T17:32:03.178+05:30  INFO 240394 --- [Scrabble Server] [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-19T17:32:03.178+05:30  INFO 240394 --- [Scrabble Server] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-19T17:32:03.178+05:30  INFO 240394 --- [Scrabble Server] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-09-19T17:32:03.185+05:30 DEBUG 240394 --- [Scrabble Server] [nio-8081-exec-1] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@3724b43e
+2025-09-19T17:32:03.190+05:30 DEBUG 240394 --- [Scrabble Server] [nio-8081-exec-1] o.s.w.s.s.s.WebSocketHttpRequestHandler  : GET /game
+2025-09-19T17:32:03.211+05:30 DEBUG 240394 --- [Scrabble Server] [nio-8081-exec-1] s.w.s.h.LoggingWebSocketHandlerDecorator : New StandardWebSocketSession[id=97e7d0f6-b5ef-bb25-8840-d6d64907256c, uri=ws://localhost:8081/game]
+WebSocket connection established: 97e7d0f6-b5ef-bb25-8840-d6d64907256c
+2025-09-19T17:33:01.638+05:30 DEBUG 240394 --- [Scrabble Server] [nio-8081-exec-2] s.w.s.h.LoggingWebSocketHandlerDecorator : StandardWebSocketSession[id=97e7d0f6-b5ef-bb25-8840-d6d64907256c, uri=ws://localhost:8081/game] closed with CloseStatus[code=1001, reason=null]
+WebSocket connection closed: 97e7d0f6-b5ef-bb25-8840-d6d64907256c
+2025-09-19T17:33:03.333+05:30 DEBUG 240394 --- [Scrabble Server] [nio-8081-exec-4] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@3724b43e
+2025-09-19T17:33:03.333+05:30 DEBUG 240394 --- [Scrabble Server] [nio-8081-exec-4] o.s.w.s.s.s.WebSocketHttpRequestHandler  : GET /game
+2025-09-19T17:33:03.335+05:30 DEBUG 240394 --- [Scrabble Server] [nio-8081-exec-4] s.w.s.h.LoggingWebSocketHandlerDecorator : New StandardWebSocketSession[id=c3dfce87-57c4-bff3-ffd3-4ce6060d58b0, uri=ws://localhost:8081/game]
+WebSocket connection established: c3dfce87-57c4-bff3-ffd3-4ce6060d58b0
+Created new game: 5a86e4c3-eceb-4868-89d7-07f55ab7f73a
+Started game: 5a86e4c3-eceb-4868-89d7-07f55ab7f73a
+Player player_1758283385504_ji5qtrvbb joined game 5a86e4c3-eceb-4868-89d7-07f55ab7f73a
+DEBUG: Received MAKE_MOVE message from player player_1758283385504_ji5qtrvbb
+DEBUG: Message payload type: class java.util.LinkedHashMap
+DEBUG: Message payload: {playerId=player_1758283385504_ji5qtrvbb, type=PLACE_TILES, tilePlacements={7,7={letter=E, value=1, assignedLetter=E, blank=false, displayLetter=E, scoreValue=1}}, exchangedTiles=[], score=0, wordsFormed=[], timestamp=2025-09-19T12:03:18.092Z, isValid=true, invalidReason=null}
+DEBUG: Payload JSON: {"playerId":"player_1758283385504_ji5qtrvbb","type":"PLACE_TILES","tilePlacements":{"7,7":{"letter":"E","value":1,"assignedLetter":"E","blank":false,"displayLetter":"E","scoreValue":1}},"exchangedTiles":[],"score":0,"wordsFormed":[],"timestamp":"2025-09-19T12:03:18.092Z","isValid":true,"invalidReason":null}
+DEBUG: Creating move with type: PLACE_TILES
+DEBUG: Successfully created Move: PLACE: [H8] (0 points) - []
+DEBUG: Bot's turn, processing bot move for player: bot-855177bf-fa37-440d-ac7a-673502f14a0d
+DEBUG: Processing bot move for ScrabbleBot (ID: bot-855177bf-fa37-440d-ac7a-673502f14a0d) - Rack size: 7
+DEBUG: Bot generated move: PLACE: [H7] (0 points) - []
+DEBUG: Bot move is invalid: Invalid word: XE
+DEBUG: Notifying about bot move in game: 5a86e4c3-eceb-4868-89d7-07f55ab7f73a
+DEBUG: Broadcasting game state update after move
+DEBUG: Received MAKE_MOVE message from player player_1758283385504_ji5qtrvbb
+DEBUG: Message payload type: class java.util.LinkedHashMap
+DEBUG: Message payload: {playerId=player_1758283385504_ji5qtrvbb, type=PASS, tilePlacements={}, exchangedTiles=[], score=0, wordsFormed=[], timestamp=2025-09-19T12:03:23.445Z, isValid=true, invalidReason=null}
+DEBUG: Payload JSON: {"playerId":"player_1758283385504_ji5qtrvbb","type":"PASS","tilePlacements":{},"exchangedTiles":[],"score":0,"wordsFormed":[],"timestamp":"2025-09-19T12:03:23.445Z","isValid":true,"invalidReason":null}
+DEBUG: Creating move with type: PASS
+DEBUG: Successfully created Move: PASS by player_1758283385504_ji5qtrvbb
+DEBUG: Bot's turn, processing bot move for player: bot-855177bf-fa37-440d-ac7a-673502f14a0d
+DEBUG: Processing bot move for ScrabbleBot (ID: bot-855177bf-fa37-440d-ac7a-673502f14a0d) - Rack size: 7
+DEBUG: Bot generated move: PLACE: [H7] (0 points) - []
+DEBUG: Bot move is invalid: Invalid word: XE
+DEBUG: Notifying about bot move in game: 5a86e4c3-eceb-4868-89d7-07f55ab7f73a
+DEBUG: Broadcasting game state update after move
+DEBUG: Received MAKE_MOVE message from player player_1758283385504_ji5qtrvbb
+DEBUG: Message payload type: class java.util.LinkedHashMap
+DEBUG: Message payload: {playerId=player_1758283385504_ji5qtrvbb, type=PLACE_TILES, tilePlacements={9,5={letter=S, value=1, assignedLetter=S, blank=false, displayLetter=S, scoreValue=1}, 8,2={letter=E, value=1, assignedLetter=E, blank=false, displayLetter=E, scoreValue=1}, 5,9={letter=E, value=1, assignedLetter=E, blank=false, displayLetter=E, scoreValue=1}, 5,5={letter=R, value=1, assignedLetter=R, blank=false, displayLetter=R, scoreValue=1}, 7,8={letter=Y, value=4, assignedLetter=Y, blank=false, displayLetter=Y, scoreValue=4}, 7,9={letter=E, value=1, assignedLetter=E, blank=false, displayLetter=E, scoreValue=1}}, exchangedTiles=[], score=0, wordsFormed=[], timestamp=2025-09-19T12:03:54.665Z, isValid=true, invalidReason=null}
+DEBUG: Payload JSON: {"playerId":"player_1758283385504_ji5qtrvbb","type":"PLACE_TILES","tilePlacements":{"9,5":{"letter":"S","value":1,"assignedLetter":"S","blank":false,"displayLetter":"S","scoreValue":1},"8,2":{"letter":"E","value":1,"assignedLetter":"E","blank":false,"displayLetter":"E","scoreValue":1},"5,9":{"letter":"E","value":1,"assignedLetter":"E","blank":false,"displayLetter":"E","scoreValue":1},"5,5":{"letter":"R","value":1,"assignedLetter":"R","blank":false,"displayLetter":"R","scoreValue":1},"7,8":{"letter":"Y","value":4,"assignedLetter":"Y","blank":false,"displayLetter":"Y","scoreValue":4},"7,9":{"letter":"E","value":1,"assignedLetter":"E","blank":false,"displayLetter":"E","scoreValue":1}},"exchangedTiles":[],"score":0,"wordsFormed":[],"timestamp":"2025-09-19T12:03:54.665Z","isValid":true,"invalidReason":null}
+DEBUG: Creating move with type: PLACE_TILES
+DEBUG: Successfully created Move: PLACE: [F6, I8, J8, J6, C9, F10] (0 points) - []
+DEBUG: Received MAKE_MOVE message from player player_1758283385504_ji5qtrvbb
+DEBUG: Message payload type: class java.util.LinkedHashMap
+DEBUG: Message payload: {playerId=player_1758283385504_ji5qtrvbb, type=PLACE_TILES, tilePlacements={6,8={letter=C, value=3, assignedLetter=C, blank=false, displayLetter=C, scoreValue=3}}, exchangedTiles=[], score=0, wordsFormed=[], timestamp=2025-09-19T12:04:11.750Z, isValid=true, invalidReason=null}
+DEBUG: Payload JSON: {"playerId":"player_1758283385504_ji5qtrvbb","type":"PLACE_TILES","tilePlacements":{"6,8":{"letter":"C","value":3,"assignedLetter":"C","blank":false,"displayLetter":"C","scoreValue":3}},"exchangedTiles":[],"score":0,"wordsFormed":[],"timestamp":"2025-09-19T12:04:11.750Z","isValid":true,"invalidReason":null}
+DEBUG: Creating move with type: PLACE_TILES
+DEBUG: Successfully created Move: PLACE: [I7] (0 points) - []
+DEBUG: Received MAKE_MOVE message from player player_1758283385504_ji5qtrvbb
+DEBUG: Message payload type: class java.util.LinkedHashMap
+DEBUG: Message payload: {playerId=player_1758283385504_ji5qtrvbb, type=PASS, tilePlacements={}, exchangedTiles=[], score=0, wordsFormed=[], timestamp=2025-09-19T12:04:18.436Z, isValid=true, invalidReason=null}
+DEBUG: Payload JSON: {"playerId":"player_1758283385504_ji5qtrvbb","type":"PASS","tilePlacements":{},"exchangedTiles":[],"score":0,"wordsFormed":[],"timestamp":"2025-09-19T12:04:18.436Z","isValid":true,"invalidReason":null}
+DEBUG: Creating move with type: PASS
+DEBUG: Successfully created Move: PASS by player_1758283385504_ji5qtrvbb
+DEBUG: Bot's turn, processing bot move for player: bot-855177bf-fa37-440d-ac7a-673502f14a0d
+DEBUG: Processing bot move for ScrabbleBot (ID: bot-855177bf-fa37-440d-ac7a-673502f14a0d) - Rack size: 7
+DEBUG: Bot generated move: PLACE: [H7] (0 points) - []
+DEBUG: Bot move is invalid: Invalid word: XE
+DEBUG: Notifying about bot move in game: 5a86e4c3-eceb-4868-89d7-07f55ab7f73a
+DEBUG: Broadcasting game state update after move
+DEBUG: Received MAKE_MOVE message from player player_1758283385504_ji5qtrvbb
+DEBUG: Message payload type: class java.util.LinkedHashMap
+DEBUG: Message payload: {playerId=player_1758283385504_ji5qtrvbb, type=PLACE_TILES, tilePlacements={7,8={letter=Y, value=4, assignedLetter=Y, blank=false, displayLetter=Y, scoreValue=4}, 7,9={letter=E, value=1, assignedLetter=E, blank=false, displayLetter=E, scoreValue=1}}, exchangedTiles=[], score=0, wordsFormed=[], timestamp=2025-09-19T12:05:03.269Z, isValid=true, invalidReason=null}
+DEBUG: Payload JSON: {"playerId":"player_1758283385504_ji5qtrvbb","type":"PLACE_TILES","tilePlacements":{"7,8":{"letter":"Y","value":4,"assignedLetter":"Y","blank":false,"displayLetter":"Y","scoreValue":4},"7,9":{"letter":"E","value":1,"assignedLetter":"E","blank":false,"displayLetter":"E","scoreValue":1}},"exchangedTiles":[],"score":0,"wordsFormed":[],"timestamp":"2025-09-19T12:05:03.269Z","isValid":true,"invalidReason":null}
+DEBUG: Creating move with type: PLACE_TILES
+DEBUG: Successfully created Move: PLACE: [I8, J8] (0 points) - []
+DEBUG: Bot's turn, processing bot move for player: bot-855177bf-fa37-440d-ac7a-673502f14a0d
+DEBUG: Processing bot move for ScrabbleBot (ID: bot-855177bf-fa37-440d-ac7a-673502f14a0d) - Rack size: 7
+DEBUG: Bot generated move: PLACE: [H7] (0 points) - []
+DEBUG: Bot move is invalid: Invalid word: XE
+DEBUG: Notifying about bot move in game: 5a86e4c3-eceb-4868-89d7-07f55ab7f73a
+DEBUG: Broadcasting game state update after move
+DEBUG: Received MAKE_MOVE message from player player_1758283385504_ji5qtrvbb
+DEBUG: Message payload type: class java.util.LinkedHashMap
+DEBUG: Message payload: {playerId=player_1758283385504_ji5qtrvbb, type=PASS, tilePlacements={}, exchangedTiles=[], score=0, wordsFormed=[], timestamp=2025-09-19T12:05:09.122Z, isValid=true, invalidReason=null}
+DEBUG: Payload JSON: {"playerId":"player_1758283385504_ji5qtrvbb","type":"PASS","tilePlacements":{},"exchangedTiles":[],"score":0,"wordsFormed":[],"timestamp":"2025-09-19T12:05:09.122Z","isValid":true,"invalidReason":null}
+DEBUG: Creating move with type: PASS
+DEBUG: Successfully created Move: PASS by player_1758283385504_ji5qtrvbb
+DEBUG: Bot's turn, processing bot move for player: bot-855177bf-fa37-440d-ac7a-673502f14a0d
+DEBUG: Processing bot move for ScrabbleBot (ID: bot-855177bf-fa37-440d-ac7a-673502f14a0d) - Rack size: 7
+DEBUG: Bot generated move: PLACE: [H7] (0 points) - []
+DEBUG: Bot move is invalid: Invalid word: XE
+DEBUG: Notifying about bot move in game: 5a86e4c3-eceb-4868-89d7-07f55ab7f73a
+DEBUG: Broadcasting game state update after move
+DEBUG: Received MAKE_MOVE message from player player_1758283385504_ji5qtrvbb
+DEBUG: Message payload type: class java.util.LinkedHashMap
+DEBUG: Message payload: {playerId=player_1758283385504_ji5qtrvbb, type=PLACE_TILES, tilePlacements={9,6={letter=C, value=3, assignedLetter=C, blank=false, displayLetter=C, scoreValue=3}, 11,4={letter=S, value=1, assignedLetter=S, blank=false, displayLetter=S, scoreValue=1}, 11,5={letter=E, value=1, assignedLetter=E, blank=false, displayLetter=E, scoreValue=1}, 11,6={letter=E, value=1, assignedLetter=E, blank=false, displayLetter=E, scoreValue=1}}, exchangedTiles=[], score=0, wordsFormed=[], timestamp=2025-09-19T12:05:58.847Z, isValid=true, invalidReason=null}
+DEBUG: Payload JSON: {"playerId":"player_1758283385504_ji5qtrvbb","type":"PLACE_TILES","tilePlacements":{"9,6":{"letter":"C","value":3,"assignedLetter":"C","blank":false,"displayLetter":"C","scoreValue":3},"11,4":{"letter":"S","value":1,"assignedLetter":"S","blank":false,"displayLetter":"S","scoreValue":1},"11,5":{"letter":"E","value":1,"assignedLetter":"E","blank":false,"displayLetter":"E","scoreValue":1},"11,6":{"letter":"E","value":1,"assignedLetter":"E","blank":false,"displayLetter":"E","scoreValue":1}},"exchangedTiles":[],"score":0,"wordsFormed":[],"timestamp":"2025-09-19T12:05:58.847Z","isValid":true,"invalidReason":null}
+DEBUG: Creating move with type: PLACE_TILES
+DEBUG: Successfully created Move: PLACE: [E12, F12, G12, G10] (0 points) - []
+DEBUG: Received MAKE_MOVE message from player player_1758283385504_ji5qtrvbb
+DEBUG: Message payload type: class java.util.LinkedHashMap
+DEBUG: Message payload: {playerId=player_1758283385504_ji5qtrvbb, type=PLACE_TILES, tilePlacements={7,4={letter=R, value=1, assignedLetter=R, blank=false, displayLetter=R, scoreValue=1}, 5,7={letter=H, value=4, assignedLetter=H, blank=false, displayLetter=H, scoreValue=4}, 9,10={letter=R, value=1, assignedLetter=R, blank=false, displayLetter=R, scoreValue=1}}, exchangedTiles=[], score=0, wordsFormed=[], timestamp=2025-09-19T12:06:14.392Z, isValid=true, invalidReason=null}
+DEBUG: Payload JSON: {"playerId":"player_1758283385504_ji5qtrvbb","type":"PLACE_TILES","tilePlacements":{"7,4":{"letter":"R","value":1,"assignedLetter":"R","blank":false,"displayLetter":"R","scoreValue":1},"5,7":{"letter":"H","value":4,"assignedLetter":"H","blank":false,"displayLetter":"H","scoreValue":4},"9,10":{"letter":"R","value":1,"assignedLetter":"R","blank":false,"displayLetter":"R","scoreValue":1}},"exchangedTiles":[],"score":0,"wordsFormed":[],"timestamp":"2025-09-19T12:06:14.392Z","isValid":true,"invalidReason":null}
+DEBUG: Creating move with type: PLACE_TILES
+DEBUG: Successfully created Move: PLACE: [K10, H6, E8] (0 points) - []
+DEBUG: Received MAKE_MOVE message from player player_1758283385504_ji5qtrvbb
+DEBUG: Message payload type: class java.util.LinkedHashMap
+DEBUG: Message payload: {playerId=player_1758283385504_ji5qtrvbb, type=PASS, tilePlacements={}, exchangedTiles=[], score=0, wordsFormed=[], timestamp=2025-09-19T12:06:22.598Z, isValid=true, invalidReason=null}
+DEBUG: Payload JSON: {"playerId":"player_1758283385504_ji5qtrvbb","type":"PASS","tilePlacements":{},"exchangedTiles":[],"score":0,"wordsFormed":[],"timestamp":"2025-09-19T12:06:22.598Z","isValid":true,"invalidReason":null}
+DEBUG: Creating move with type: PASS
+DEBUG: Successfully created Move: PASS by player_1758283385504_ji5qtrvbb
+DEBUG: Bot's turn, processing bot move for player: bot-855177bf-fa37-440d-ac7a-673502f14a0d
+DEBUG: Processing bot move for ScrabbleBot (ID: bot-855177bf-fa37-440d-ac7a-673502f14a0d) - Rack size: 7
+DEBUG: Bot generated move: PLACE: [H7] (0 points) - []
+DEBUG: Bot move is invalid: Invalid word: XE
+DEBUG: Notifying about bot move in game: 5a86e4c3-eceb-4868-89d7-07f55ab7f73a
+DEBUG: Broadcasting game state update after move
