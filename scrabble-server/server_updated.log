@@ -1,0 +1,372 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.scrabble:scrabble-server:jar:1.0.0
+[WARNING] 'build.plugins.plugin.version' for org.springframework.boot:spring-boot-maven-plugin is missing. @ line 47, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] --------------------< com.scrabble:scrabble-server >--------------------
+[INFO] Building Scrabble Server 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:4.0.0-M3:run (default-cli) > test-compile @ scrabble-server >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ scrabble-server ---
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ scrabble-server ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ scrabble-server ---
+[INFO] skip non existing resourceDirectory /home/Kasun/Development/RnD/Challange/scrabble-server/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ scrabble-server ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot:4.0.0-M3:run (default-cli) < test-compile @ scrabble-server <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:4.0.0-M3:run (default-cli) @ scrabble-server ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.1)
+
+2025-09-19T16:21:29.781+05:30  INFO 167412 --- [Scrabble Server] [           main] c.s.server.ScrabbleServerApplication     : Starting ScrabbleServerApplication using Java 21.0.7 with PID 167412 (/home/Kasun/Development/RnD/Challange/scrabble-server/target/classes started by Kasun in /home/Kasun/Development/RnD/Challange/scrabble-server)
+2025-09-19T16:21:29.782+05:30  INFO 167412 --- [Scrabble Server] [           main] c.s.server.ScrabbleServerApplication     : The following 1 profile is active: "devlocal"
+2025-09-19T16:21:30.169+05:30  INFO 167412 --- [Scrabble Server] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-09-19T16:21:30.176+05:30  INFO 167412 --- [Scrabble Server] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-19T16:21:30.176+05:30  INFO 167412 --- [Scrabble Server] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2025-09-19T16:21:30.202+05:30  INFO 167412 --- [Scrabble Server] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-19T16:21:30.202+05:30  INFO 167412 --- [Scrabble Server] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 396 ms
+Loading dictionary from: ../CSW24.txt
+Dictionary loaded: 280887 words
+2025-09-19T16:21:30.820+05:30 DEBUG 167412 --- [Scrabble Server] [           main] o.s.w.s.s.s.WebSocketHandlerMapping      : Patterns [/game, /game-sockjs/**] in 'webSocketHandlerMapping'
+2025-09-19T16:21:30.940+05:30  INFO 167412 --- [Scrabble Server] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2025-09-19T16:21:30.946+05:30  INFO 167412 --- [Scrabble Server] [           main] c.s.server.ScrabbleServerApplication     : Started ScrabbleServerApplication in 1.334 seconds (process running for 1.468)
+2025-09-19T16:21:42.183+05:30  INFO 167412 --- [Scrabble Server] [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-19T16:21:42.183+05:30  INFO 167412 --- [Scrabble Server] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-19T16:21:42.183+05:30  INFO 167412 --- [Scrabble Server] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-09-19T16:22:00.443+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-2] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@47af099e
+2025-09-19T16:22:00.444+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-2] o.s.w.s.s.s.WebSocketHttpRequestHandler  : GET /game
+2025-09-19T16:22:00.459+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-2] s.w.s.h.LoggingWebSocketHandlerDecorator : New StandardWebSocketSession[id=b70d5b59-bef5-db6f-ecf9-132f5edc6d53, uri=ws://localhost:8081/game]
+WebSocket connection established: b70d5b59-bef5-db6f-ecf9-132f5edc6d53
+2025-09-19T16:22:20.347+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-3] s.w.s.h.LoggingWebSocketHandlerDecorator : Transport error in StandardWebSocketSession[id=b70d5b59-bef5-db6f-ecf9-132f5edc6d53, uri=ws://localhost:8081/game]
+
+java.io.EOFException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.fillReadBuffer(NioEndpoint.java:1296) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.read(NioEndpoint.java:1184) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:74) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:184) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:164) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:152) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:57) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-09-19T16:22:20.355+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-3] s.w.s.h.LoggingWebSocketHandlerDecorator : StandardWebSocketSession[id=b70d5b59-bef5-db6f-ecf9-132f5edc6d53, uri=ws://localhost:8081/game] closed with CloseStatus[code=1006, reason=null]
+WebSocket connection closed: b70d5b59-bef5-db6f-ecf9-132f5edc6d53
+Created new game: 96a3cf12-67c5-4214-8750-6c44ef0028e5
+Started game: 96a3cf12-67c5-4214-8750-6c44ef0028e5
+2025-09-19T16:24:48.284+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-6] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@47af099e
+2025-09-19T16:24:48.284+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-6] o.s.w.s.s.s.WebSocketHttpRequestHandler  : GET /game
+2025-09-19T16:24:48.285+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-6] s.w.s.h.LoggingWebSocketHandlerDecorator : New StandardWebSocketSession[id=91743950-269a-ee1b-a112-f7de7b9989df, uri=ws://localhost:8081/game]
+WebSocket connection established: 91743950-269a-ee1b-a112-f7de7b9989df
+Created new game: 7928a0cc-4736-4d50-929b-72af2d8b3d85
+Started game: 7928a0cc-4736-4d50-929b-72af2d8b3d85
+Player 7f1fbe8c-ab06-4138-9fa9-3e879cc96df8 joined game 7928a0cc-4736-4d50-929b-72af2d8b3d85
+2025-09-19T16:25:19.051+05:30 DEBUG 167412 --- [Scrabble Server] [io-8081-exec-10] s.w.s.h.LoggingWebSocketHandlerDecorator : Transport error in StandardWebSocketSession[id=91743950-269a-ee1b-a112-f7de7b9989df, uri=ws://localhost:8081/game]
+
+java.io.EOFException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.fillReadBuffer(NioEndpoint.java:1296) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.read(NioEndpoint.java:1184) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:74) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:184) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:164) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:152) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:57) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-09-19T16:25:19.052+05:30 DEBUG 167412 --- [Scrabble Server] [io-8081-exec-10] s.w.s.h.LoggingWebSocketHandlerDecorator : StandardWebSocketSession[id=91743950-269a-ee1b-a112-f7de7b9989df, uri=ws://localhost:8081/game] closed with CloseStatus[code=1006, reason=null]
+WebSocket connection closed: 91743950-269a-ee1b-a112-f7de7b9989df
+2025-09-19T16:37:51.084+05:30  WARN 167412 --- [Scrabble Server] [nio-8081-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2025-09-19T16:38:49.031+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-2] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@47af099e
+2025-09-19T16:38:49.031+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-2] o.s.w.s.s.s.WebSocketHttpRequestHandler  : GET /game
+2025-09-19T16:38:49.035+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-2] s.w.s.h.LoggingWebSocketHandlerDecorator : New StandardWebSocketSession[id=55488c15-0610-0e51-55d6-ec6497df51d7, uri=ws://localhost:8081/game]
+WebSocket connection established: 55488c15-0610-0e51-55d6-ec6497df51d7
+Created new game: 6e3bcd58-7a02-46fc-ab02-d82aa1a8f58a
+Started game: 6e3bcd58-7a02-46fc-ab02-d82aa1a8f58a
+Player player_1758280134917_txm56sbt0 joined game 6e3bcd58-7a02-46fc-ab02-d82aa1a8f58a
+Created new game: cadd50d7-70f5-4eb7-b180-c8abc3264b75
+Started game: cadd50d7-70f5-4eb7-b180-c8abc3264b75
+2025-09-19T16:39:04.941+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-8] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@47af099e
+2025-09-19T16:39:04.941+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-8] o.s.w.s.s.s.WebSocketHttpRequestHandler  : GET /game
+2025-09-19T16:40:40.416+05:30 DEBUG 167412 --- [Scrabble Server] [io-8081-exec-10] s.w.s.h.LoggingWebSocketHandlerDecorator : StandardWebSocketSession[id=55488c15-0610-0e51-55d6-ec6497df51d7, uri=ws://localhost:8081/game] closed with CloseStatus[code=1001, reason=null]
+WebSocket connection closed: 55488c15-0610-0e51-55d6-ec6497df51d7
+2025-09-19T16:40:42.436+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-2] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@47af099e
+2025-09-19T16:40:42.436+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-2] o.s.w.s.s.s.WebSocketHttpRequestHandler  : GET /game
+2025-09-19T16:40:42.437+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-2] s.w.s.h.LoggingWebSocketHandlerDecorator : New StandardWebSocketSession[id=a8593158-13b9-3c40-b234-9d2969f965f2, uri=ws://localhost:8081/game]
+WebSocket connection established: a8593158-13b9-3c40-b234-9d2969f965f2
+Created new game: b7dd3f78-441f-4435-ae92-f907a48178dc
+Started game: b7dd3f78-441f-4435-ae92-f907a48178dc
+Player player_1758280247604_xzv2vej3p joined game b7dd3f78-441f-4435-ae92-f907a48178dc
+2025-09-19T16:43:05.438+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-6] s.w.s.h.LoggingWebSocketHandlerDecorator : StandardWebSocketSession[id=a8593158-13b9-3c40-b234-9d2969f965f2, uri=ws://localhost:8081/game] closed with CloseStatus[code=1000, reason=Client disconnecting]
+WebSocket connection closed: a8593158-13b9-3c40-b234-9d2969f965f2
+2025-09-19T16:44:37.623+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-8] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@47af099e
+2025-09-19T16:44:37.623+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-8] o.s.w.s.s.s.WebSocketHttpRequestHandler  : GET /game
+2025-09-19T16:44:37.624+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-8] s.w.s.h.LoggingWebSocketHandlerDecorator : New StandardWebSocketSession[id=465a1a51-0c4e-fefe-096c-3f0e39eba4ba, uri=ws://localhost:8081/game]
+WebSocket connection established: 465a1a51-0c4e-fefe-096c-3f0e39eba4ba
+Created new game: 0e6b454e-d9ca-4e53-b0ba-94670a7adb1c
+Started game: 0e6b454e-d9ca-4e53-b0ba-94670a7adb1c
+Player player_1758280482120_h9jzcmyj4 joined game 0e6b454e-d9ca-4e53-b0ba-94670a7adb1c
+2025-09-19T16:46:07.387+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-4] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@47af099e
+2025-09-19T16:46:07.387+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-4] o.s.w.s.s.s.WebSocketHttpRequestHandler  : GET /game
+2025-09-19T16:46:07.388+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-4] s.w.s.h.LoggingWebSocketHandlerDecorator : New StandardWebSocketSession[id=f67bee58-7f41-15a3-05b9-93e2e74dc2c4, uri=ws://localhost:8081/game]
+WebSocket connection established: f67bee58-7f41-15a3-05b9-93e2e74dc2c4
+Created new game: ebc0ceca-136b-43a5-b054-8fb8b3ea10e9
+Started game: ebc0ceca-136b-43a5-b054-8fb8b3ea10e9
+Player player_1758280571053_a5cy21fem joined game ebc0ceca-136b-43a5-b054-8fb8b3ea10e9
+2025-09-19T16:47:51.700+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-8] s.w.s.h.LoggingWebSocketHandlerDecorator : StandardWebSocketSession[id=f67bee58-7f41-15a3-05b9-93e2e74dc2c4, uri=ws://localhost:8081/game] closed with CloseStatus[code=1000, reason=Client disconnecting]
+WebSocket connection closed: f67bee58-7f41-15a3-05b9-93e2e74dc2c4
+2025-09-19T16:48:12.418+05:30 DEBUG 167412 --- [Scrabble Server] [io-8081-exec-10] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@47af099e
+2025-09-19T16:48:12.419+05:30 DEBUG 167412 --- [Scrabble Server] [io-8081-exec-10] o.s.w.s.s.s.WebSocketHttpRequestHandler  : GET /game
+2025-09-19T16:48:12.419+05:30 DEBUG 167412 --- [Scrabble Server] [io-8081-exec-10] s.w.s.h.LoggingWebSocketHandlerDecorator : New StandardWebSocketSession[id=4b8354b8-04e2-b7ec-02fe-43d038debdfb, uri=ws://localhost:8081/game]
+WebSocket connection established: 4b8354b8-04e2-b7ec-02fe-43d038debdfb
+Created new game: 6386013a-ac8c-46fd-abc6-70d576b266f9
+Started game: 6386013a-ac8c-46fd-abc6-70d576b266f9
+Player player_1758280696640_fp7z37sa7 joined game 6386013a-ac8c-46fd-abc6-70d576b266f9
+2025-09-19T16:49:22.782+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-5] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@47af099e
+2025-09-19T16:49:22.782+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-5] o.s.w.s.s.s.WebSocketHttpRequestHandler  : GET /game
+2025-09-19T16:49:22.783+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-5] s.w.s.h.LoggingWebSocketHandlerDecorator : New StandardWebSocketSession[id=2a60233e-bad5-dd88-9818-45001a734776, uri=ws://localhost:8081/game]
+WebSocket connection established: 2a60233e-bad5-dd88-9818-45001a734776
+Created new game: 072e38e9-f128-4e74-a892-dcebb03aca8b
+Started game: 072e38e9-f128-4e74-a892-dcebb03aca8b
+Player player_1758280765471_xx0fiz10m joined game 072e38e9-f128-4e74-a892-dcebb03aca8b
+2025-09-19T16:52:20.024+05:30 DEBUG 167412 --- [Scrabble Server] [io-8081-exec-10] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@47af099e
+2025-09-19T16:52:20.030+05:30 DEBUG 167412 --- [Scrabble Server] [io-8081-exec-10] o.s.w.s.s.s.WebSocketHttpRequestHandler  : GET /game
+2025-09-19T16:52:20.031+05:30 DEBUG 167412 --- [Scrabble Server] [io-8081-exec-10] s.w.s.h.LoggingWebSocketHandlerDecorator : New StandardWebSocketSession[id=af685bf0-5a05-7758-1ff1-dc52d530f408, uri=ws://localhost:8081/game]
+WebSocket connection established: af685bf0-5a05-7758-1ff1-dc52d530f408
+Created new game: de21be34-0120-4466-b862-66f21ea254c0
+Started game: de21be34-0120-4466-b862-66f21ea254c0
+Player player_1758280943281_wxh3gceyx joined game de21be34-0120-4466-b862-66f21ea254c0
+2025-09-19T16:52:35.868+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-3] s.w.s.h.LoggingWebSocketHandlerDecorator : StandardWebSocketSession[id=4b8354b8-04e2-b7ec-02fe-43d038debdfb, uri=ws://localhost:8081/game] closed with CloseStatus[code=1001, reason=null]
+WebSocket connection closed: 4b8354b8-04e2-b7ec-02fe-43d038debdfb
+2025-09-19T16:52:41.487+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-4] s.w.s.h.LoggingWebSocketHandlerDecorator : StandardWebSocketSession[id=2a60233e-bad5-dd88-9818-45001a734776, uri=ws://localhost:8081/game] closed with CloseStatus[code=1001, reason=null]
+WebSocket connection closed: 2a60233e-bad5-dd88-9818-45001a734776
+2025-09-19T16:52:43.729+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-6] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@47af099e
+2025-09-19T16:52:43.729+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-6] o.s.w.s.s.s.WebSocketHttpRequestHandler  : GET /game
+2025-09-19T16:52:43.730+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-6] s.w.s.h.LoggingWebSocketHandlerDecorator : New StandardWebSocketSession[id=51debd64-88a4-bd3f-747e-7bde803bb7b2, uri=ws://localhost:8081/game]
+WebSocket connection established: 51debd64-88a4-bd3f-747e-7bde803bb7b2
+Created new game: fad1f050-78a1-4766-8c62-8947c5f8d3f7
+Started game: fad1f050-78a1-4766-8c62-8947c5f8d3f7
+Player player_1758280967049_rywdgo7k7 joined game fad1f050-78a1-4766-8c62-8947c5f8d3f7
+2025-09-19T16:52:52.902+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-9] s.w.s.h.LoggingWebSocketHandlerDecorator : StandardWebSocketSession[id=51debd64-88a4-bd3f-747e-7bde803bb7b2, uri=ws://localhost:8081/game] closed with CloseStatus[code=1001, reason=null]
+WebSocket connection closed: 51debd64-88a4-bd3f-747e-7bde803bb7b2
+2025-09-19T16:52:55.893+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-1] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@47af099e
+2025-09-19T16:52:55.893+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-1] o.s.w.s.s.s.WebSocketHttpRequestHandler  : GET /game
+2025-09-19T16:52:55.894+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-1] s.w.s.h.LoggingWebSocketHandlerDecorator : New StandardWebSocketSession[id=4321757b-6ceb-2fd6-fcc1-39a6b59c0e33, uri=ws://localhost:8081/game]
+WebSocket connection established: 4321757b-6ceb-2fd6-fcc1-39a6b59c0e33
+Created new game: e4062073-c72a-4fe9-b7e1-7c1d30caeaa1
+Started game: e4062073-c72a-4fe9-b7e1-7c1d30caeaa1
+Player player_1758280979652_zqbkkt2i4 joined game e4062073-c72a-4fe9-b7e1-7c1d30caeaa1
+2025-09-19T16:53:36.271+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-4] s.w.s.h.LoggingWebSocketHandlerDecorator : StandardWebSocketSession[id=465a1a51-0c4e-fefe-096c-3f0e39eba4ba, uri=ws://localhost:8081/game] closed with CloseStatus[code=1001, reason=null]
+WebSocket connection closed: 465a1a51-0c4e-fefe-096c-3f0e39eba4ba
+2025-09-19T16:53:38.672+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-6] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@47af099e
+2025-09-19T16:53:38.672+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-6] o.s.w.s.s.s.WebSocketHttpRequestHandler  : GET /game
+2025-09-19T16:53:38.673+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-6] s.w.s.h.LoggingWebSocketHandlerDecorator : New StandardWebSocketSession[id=1d368280-8155-7373-e8ff-7d0488502cd3, uri=ws://localhost:8081/game]
+WebSocket connection established: 1d368280-8155-7373-e8ff-7d0488502cd3
+Created new game: eba0a3a7-8ca1-4182-92f5-76679d49d94b
+Started game: eba0a3a7-8ca1-4182-92f5-76679d49d94b
+Player player_1758281021878_yjne2awkl joined game eba0a3a7-8ca1-4182-92f5-76679d49d94b
+2025-09-19T16:54:35.090+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-2] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@47af099e
+2025-09-19T16:54:35.090+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-2] o.s.w.s.s.s.WebSocketHttpRequestHandler  : GET /game
+2025-09-19T16:54:35.091+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-2] s.w.s.h.LoggingWebSocketHandlerDecorator : New StandardWebSocketSession[id=bb81ca3c-ac79-2cb7-bab7-74f8b4ad6ea3, uri=ws://localhost:8081/game]
+WebSocket connection established: bb81ca3c-ac79-2cb7-bab7-74f8b4ad6ea3
+Created new game: 1fbb0682-96af-417d-b835-ac56732a95d4
+Started game: 1fbb0682-96af-417d-b835-ac56732a95d4
+Player player_1758281078070_fc41sm4gg joined game 1fbb0682-96af-417d-b835-ac56732a95d4
+2025-09-19T16:58:25.950+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-2] s.w.s.h.LoggingWebSocketHandlerDecorator : StandardWebSocketSession[id=af685bf0-5a05-7758-1ff1-dc52d530f408, uri=ws://localhost:8081/game] closed with CloseStatus[code=1001, reason=null]
+WebSocket connection closed: af685bf0-5a05-7758-1ff1-dc52d530f408
+2025-09-19T16:58:27.620+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-3] s.w.s.h.LoggingWebSocketHandlerDecorator : StandardWebSocketSession[id=4321757b-6ceb-2fd6-fcc1-39a6b59c0e33, uri=ws://localhost:8081/game] closed with CloseStatus[code=1001, reason=null]
+WebSocket connection closed: 4321757b-6ceb-2fd6-fcc1-39a6b59c0e33
+2025-09-19T16:58:33.611+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-4] s.w.s.h.LoggingWebSocketHandlerDecorator : StandardWebSocketSession[id=bb81ca3c-ac79-2cb7-bab7-74f8b4ad6ea3, uri=ws://localhost:8081/game] closed with CloseStatus[code=1001, reason=null]
+WebSocket connection closed: bb81ca3c-ac79-2cb7-bab7-74f8b4ad6ea3
+2025-09-19T16:58:42.610+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-6] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@47af099e
+2025-09-19T16:58:42.610+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-6] o.s.w.s.s.s.WebSocketHttpRequestHandler  : GET /game
+2025-09-19T16:58:42.611+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-6] s.w.s.h.LoggingWebSocketHandlerDecorator : New StandardWebSocketSession[id=65dfea77-90cf-f316-0821-0242179dfa53, uri=ws://localhost:8081/game]
+WebSocket connection established: 65dfea77-90cf-f316-0821-0242179dfa53
+Created new game: c467a56a-8401-46c7-9c37-d137f879dc6e
+Started game: c467a56a-8401-46c7-9c37-d137f879dc6e
+Player player_1758281326010_9wiavvhby joined game c467a56a-8401-46c7-9c37-d137f879dc6e
+2025-09-19T16:59:20.393+05:30 DEBUG 167412 --- [Scrabble Server] [io-8081-exec-10] s.w.s.h.LoggingWebSocketHandlerDecorator : StandardWebSocketSession[id=65dfea77-90cf-f316-0821-0242179dfa53, uri=ws://localhost:8081/game] closed with CloseStatus[code=1001, reason=null]
+WebSocket connection closed: 65dfea77-90cf-f316-0821-0242179dfa53
+2025-09-19T16:59:22.628+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-2] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@47af099e
+2025-09-19T16:59:22.629+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-2] o.s.w.s.s.s.WebSocketHttpRequestHandler  : GET /game
+2025-09-19T16:59:22.629+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-2] s.w.s.h.LoggingWebSocketHandlerDecorator : New StandardWebSocketSession[id=3075a376-20f6-4017-8030-c86760547d45, uri=ws://localhost:8081/game]
+WebSocket connection established: 3075a376-20f6-4017-8030-c86760547d45
+Created new game: 212e0c9e-5f50-4647-94a7-4a801a07c32a
+Started game: 212e0c9e-5f50-4647-94a7-4a801a07c32a
+Player player_1758281364518_54c0z7lwm joined game 212e0c9e-5f50-4647-94a7-4a801a07c32a
+2025-09-19T17:01:48.335+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-6] s.w.s.h.LoggingWebSocketHandlerDecorator : StandardWebSocketSession[id=3075a376-20f6-4017-8030-c86760547d45, uri=ws://localhost:8081/game] closed with CloseStatus[code=1001, reason=null]
+WebSocket connection closed: 3075a376-20f6-4017-8030-c86760547d45
+2025-09-19T17:01:59.229+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-8] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@47af099e
+2025-09-19T17:01:59.229+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-8] o.s.w.s.s.s.WebSocketHttpRequestHandler  : GET /game
+2025-09-19T17:01:59.230+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-8] s.w.s.h.LoggingWebSocketHandlerDecorator : New StandardWebSocketSession[id=a3ea0161-754f-ab4f-2b69-19120688424d, uri=ws://localhost:8081/game]
+WebSocket connection established: a3ea0161-754f-ab4f-2b69-19120688424d
+Created new game: 15eb6584-ff94-4cc8-ab5e-9f7b630eabb3
+Started game: 15eb6584-ff94-4cc8-ab5e-9f7b630eabb3
+Player player_1758281521862_uwybovtg6 joined game 15eb6584-ff94-4cc8-ab5e-9f7b630eabb3
+2025-09-19T17:03:44.301+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-7] s.w.s.h.LoggingWebSocketHandlerDecorator : StandardWebSocketSession[id=a3ea0161-754f-ab4f-2b69-19120688424d, uri=ws://localhost:8081/game] closed with CloseStatus[code=1001, reason=null]
+WebSocket connection closed: a3ea0161-754f-ab4f-2b69-19120688424d
+2025-09-19T17:03:46.160+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-9] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@47af099e
+2025-09-19T17:03:46.160+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-9] o.s.w.s.s.s.WebSocketHttpRequestHandler  : GET /game
+2025-09-19T17:03:46.161+05:30 DEBUG 167412 --- [Scrabble Server] [nio-8081-exec-9] s.w.s.h.LoggingWebSocketHandlerDecorator : New StandardWebSocketSession[id=9ce5a555-e105-7801-f5fd-70c47b4827f9, uri=ws://localhost:8081/game]
+WebSocket connection established: 9ce5a555-e105-7801-f5fd-70c47b4827f9
+Created new game: 9ea6cf3f-c706-40cf-9abf-74988daa7100
+Started game: 9ea6cf3f-c706-40cf-9abf-74988daa7100
+Player player_1758281628815_vykjrnjzg joined game 9ea6cf3f-c706-40cf-9abf-74988daa7100
+2025-09-19T17:06:06.390+05:30 DEBUG 167412 --- [Scrabble Server] [ionShutdownHook] s.w.s.h.LoggingWebSocketHandlerDecorator : Transport error in StandardWebSocketSession[id=1d368280-8155-7373-e8ff-7d0488502cd3, uri=ws://localhost:8081/game]
+
+java.io.IOException: java.nio.channels.ClosedChannelException
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:321) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:257) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.WsSession.sendCloseMessage(WsSession.java:718) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.WsSession.doClose(WsSession.java:587) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.WsSession.doClose(WsSession.java:554) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.WsSession.close(WsSession.java:542) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.WsWebSocketContainer.destroy(WsWebSocketContainer.java:1019) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.server.WsContextListener.contextDestroyed(WsContextListener.java:46) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4466) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5093) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1348) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1337) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:931) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1348) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1337) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:931) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:496) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:969) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.startup.Tomcat.stop(Tomcat.java:498) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stopTomcat(TomcatWebServer.java:297) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.destroy(TomcatWebServer.java:370) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:177) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1091) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145) ~[spring-boot-3.2.1.jar:3.2.1]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114) ~[spring-boot-3.2.1.jar:3.2.1]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.nio.channels.ClosedChannelException: null
+	at org.apache.tomcat.util.net.NioChannel$1.write(NioChannel.java:269) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper$NioOperationState.run(NioEndpoint.java:1635) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.net.SocketWrapperBase$OperationState.start(SocketWrapperBase.java:1051) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.net.SocketWrapperBase.vectoredOperation(SocketWrapperBase.java:1440) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1366) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1337) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.doWrite(WsRemoteEndpointImplServer.java:165) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:516) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:308) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	... 37 common frames omitted
+
+2025-09-19T17:06:06.391+05:30 DEBUG 167412 --- [Scrabble Server] [ionShutdownHook] s.w.s.h.LoggingWebSocketHandlerDecorator : StandardWebSocketSession[id=1d368280-8155-7373-e8ff-7d0488502cd3, uri=ws://localhost:8081/game] closed with CloseStatus[code=1001, reason=The web application is stopping]
+WebSocket connection closed: 1d368280-8155-7373-e8ff-7d0488502cd3
+2025-09-19T17:06:06.391+05:30 DEBUG 167412 --- [Scrabble Server] [ionShutdownHook] s.w.s.h.LoggingWebSocketHandlerDecorator : Transport error in StandardWebSocketSession[id=9ce5a555-e105-7801-f5fd-70c47b4827f9, uri=ws://localhost:8081/game]
+
+java.io.IOException: java.nio.channels.ClosedChannelException
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:321) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:257) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.WsSession.sendCloseMessage(WsSession.java:718) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.WsSession.doClose(WsSession.java:587) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.WsSession.doClose(WsSession.java:554) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.WsSession.close(WsSession.java:542) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.WsWebSocketContainer.destroy(WsWebSocketContainer.java:1019) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.server.WsContextListener.contextDestroyed(WsContextListener.java:46) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4466) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5093) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1348) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1337) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:931) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1348) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1337) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:931) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:496) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:969) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.startup.Tomcat.stop(Tomcat.java:498) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stopTomcat(TomcatWebServer.java:297) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.destroy(TomcatWebServer.java:370) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:177) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1091) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145) ~[spring-boot-3.2.1.jar:3.2.1]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114) ~[spring-boot-3.2.1.jar:3.2.1]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.nio.channels.ClosedChannelException: null
+	at org.apache.tomcat.util.net.NioChannel$1.write(NioChannel.java:269) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper$NioOperationState.run(NioEndpoint.java:1635) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.net.SocketWrapperBase$OperationState.start(SocketWrapperBase.java:1051) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.net.SocketWrapperBase.vectoredOperation(SocketWrapperBase.java:1440) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1366) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1337) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.doWrite(WsRemoteEndpointImplServer.java:165) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:516) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:308) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	... 37 common frames omitted
+
+2025-09-19T17:06:06.391+05:30 DEBUG 167412 --- [Scrabble Server] [ionShutdownHook] s.w.s.h.LoggingWebSocketHandlerDecorator : StandardWebSocketSession[id=9ce5a555-e105-7801-f5fd-70c47b4827f9, uri=ws://localhost:8081/game] closed with CloseStatus[code=1001, reason=The web application is stopping]
+WebSocket connection closed: 9ce5a555-e105-7801-f5fd-70c47b4827f9
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  44:37 min
+[INFO] Finished at: 2025-09-19T17:06:06+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:4.0.0-M3:run (default-cli) on project scrabble-server: Process terminated with exit code: 143 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

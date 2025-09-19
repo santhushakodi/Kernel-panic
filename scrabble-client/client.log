@@ -1,0 +1,56 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.scrabble:scrabble-client >--------------------
+[INFO] Building Scrabble Client 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] 6 problems were encountered while building the effective model for org.openjfx:javafx-controls:jar:21.0.1 during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ scrabble-client ---
+[INFO] Deleting /home/Kasun/Development/RnD/Challange/scrabble-client/target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ scrabble-client ---
+[INFO] Copying 3 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ scrabble-client ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 15 source files with javac [debug target 21] to target/classes
+[INFO] 
+[INFO] >>> javafx:0.0.8:run (default-cli) > process-classes @ scrabble-client >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ scrabble-client ---
+[INFO] Copying 3 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ scrabble-client ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< javafx:0.0.8:run (default-cli) < process-classes @ scrabble-client <<<
+[INFO] 
+[INFO] 
+[INFO] --- javafx:0.0.8:run (default-cli) @ scrabble-client ---
+[main] INFO com.scrabble.client.MainApplication - Starting Scrabble Game Client
+[JavaFX Application Thread] INFO com.scrabble.client.controller.AppController - AppController initialized
+[JavaFX Application Thread] INFO com.scrabble.client.MainApplication - Scrabble client application started successfully
+[WebSocketConnectReadThread-51] INFO com.scrabble.client.websocket.GameWebSocketClient - WebSocket connection opened to game server
+[WebSocketConnectReadThread-51] INFO com.scrabble.client.MainApplication - Connected to game server
+[ForkJoinPool.commonPool-worker-1] WARN com.scrabble.client.service.GameServiceClient - Join lobby failed with status: 400
+[ForkJoinPool.commonPool-worker-1] WARN com.scrabble.client.service.GameServiceClient - Bot game creation failed with status: 400
+[ForkJoinPool.commonPool-worker-1] WARN com.scrabble.client.service.GameServiceClient - Join lobby failed with status: 400
+[ForkJoinPool.commonPool-worker-1] WARN com.scrabble.client.service.GameServiceClient - Join lobby failed with status: 400
+[JavaFX Application Thread] INFO com.scrabble.client.MainApplication - User requested to close application
+[JavaFX Application Thread] INFO com.scrabble.client.MainApplication - Shutting down Scrabble client application
+[JavaFX Application Thread] INFO com.scrabble.client.websocket.GameWebSocketClient - Disconnecting from game server
+[JavaFX Application Thread] INFO com.scrabble.client.controller.AppController - Shutting down AppController
+[JavaFX Application Thread] INFO com.scrabble.client.websocket.GameWebSocketClient - Disconnecting from game server
+[JavaFX Application Thread] INFO com.scrabble.client.MainApplication - Shutting down Scrabble client application
+[JavaFX Application Thread] INFO com.scrabble.client.websocket.GameWebSocketClient - Disconnecting from game server
+[JavaFX Application Thread] INFO com.scrabble.client.controller.AppController - Shutting down AppController
+[WebSocketConnectReadThread-51] WARN com.scrabble.client.websocket.GameWebSocketClient - WebSocket connection closed - Code: 1000, Reason: , Remote: false
+[JavaFX Application Thread] INFO com.scrabble.client.websocket.GameWebSocketClient - Disconnecting from game server
+[WebSocketConnectReadThread-51] WARN com.scrabble.client.MainApplication - Disconnected from game server
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:09 min
+[INFO] Finished at: 2025-09-19T16:06:02+05:30
+[INFO] ------------------------------------------------------------------------

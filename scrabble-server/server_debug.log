@@ -1,0 +1,63 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.scrabble:scrabble-server:jar:1.0.0
+[WARNING] 'build.plugins.plugin.version' for org.springframework.boot:spring-boot-maven-plugin is missing. @ line 47, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] --------------------< com.scrabble:scrabble-server >--------------------
+[INFO] Building Scrabble Server 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:4.0.0-M3:run (default-cli) > test-compile @ scrabble-server >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ scrabble-server ---
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ scrabble-server ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 6 source files with javac [debug target 21] to target/classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ scrabble-server ---
+[INFO] skip non existing resourceDirectory /home/Kasun/Development/RnD/Challange/scrabble-server/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ scrabble-server ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] 
+[INFO] <<< spring-boot:4.0.0-M3:run (default-cli) < test-compile @ scrabble-server <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:4.0.0-M3:run (default-cli) @ scrabble-server ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.1)
+
+2025-09-19T17:23:58.279+05:30  INFO 230900 --- [Scrabble Server] [           main] c.s.server.ScrabbleServerApplication     : Starting ScrabbleServerApplication using Java 21.0.7 with PID 230900 (/home/Kasun/Development/RnD/Challange/scrabble-server/target/classes started by Kasun in /home/Kasun/Development/RnD/Challange/scrabble-server)
+2025-09-19T17:23:58.280+05:30  INFO 230900 --- [Scrabble Server] [           main] c.s.server.ScrabbleServerApplication     : The following 1 profile is active: "devlocal"
+2025-09-19T17:23:58.753+05:30  INFO 230900 --- [Scrabble Server] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-09-19T17:23:58.761+05:30  INFO 230900 --- [Scrabble Server] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-19T17:23:58.761+05:30  INFO 230900 --- [Scrabble Server] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2025-09-19T17:23:58.784+05:30  INFO 230900 --- [Scrabble Server] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-19T17:23:58.785+05:30  INFO 230900 --- [Scrabble Server] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 478 ms
+Loading dictionary from: ../CSW24.txt
+Dictionary loaded: 280887 words
+2025-09-19T17:23:59.436+05:30 DEBUG 230900 --- [Scrabble Server] [           main] o.s.w.s.s.s.WebSocketHandlerMapping      : Patterns [/game, /game-sockjs/**] in 'webSocketHandlerMapping'
+2025-09-19T17:23:59.568+05:30  INFO 230900 --- [Scrabble Server] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2025-09-19T17:23:59.572+05:30  INFO 230900 --- [Scrabble Server] [           main] c.s.server.ScrabbleServerApplication     : Started ScrabbleServerApplication in 1.471 seconds (process running for 1.636)
+2025-09-19T17:24:07.245+05:30  INFO 230900 --- [Scrabble Server] [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-19T17:24:07.245+05:30  INFO 230900 --- [Scrabble Server] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-19T17:24:07.245+05:30  INFO 230900 --- [Scrabble Server] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-09-19T17:24:07.250+05:30 DEBUG 230900 --- [Scrabble Server] [nio-8081-exec-1] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@3724b43e
+2025-09-19T17:24:07.255+05:30 DEBUG 230900 --- [Scrabble Server] [nio-8081-exec-1] o.s.w.s.s.s.WebSocketHttpRequestHandler  : GET /game
+2025-09-19T17:24:07.271+05:30 DEBUG 230900 --- [Scrabble Server] [nio-8081-exec-1] s.w.s.h.LoggingWebSocketHandlerDecorator : New StandardWebSocketSession[id=c6a39b99-c316-9d61-6e1d-40a6383e557f, uri=ws://localhost:8081/game]
+WebSocket connection established: c6a39b99-c316-9d61-6e1d-40a6383e557f
